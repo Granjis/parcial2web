@@ -1,25 +1,27 @@
 /* eslint-disable prettier/prettier *//* archivo: src/artist/artist.entity.ts */
-import { Column, Entity,  ManyToOne,  PrimaryGeneratedColumn } from "typeorm";
-import { ClaseEntity } from "src/clase/clase.entity/clase.entity";
-import { UsuarioEntity } from "src/usuario/usuario.entity/usuario.entity";
+import { Column,  Entity,  ManyToOne,  PrimaryGeneratedColumn } from "typeorm";
+import { UsuarioEntity } from "../usuario/usuario.entity";
+import { ClaseEntity } from "../clase/clase.entity";
+
 @Entity()export class BonoEntity {
+
    @PrimaryGeneratedColumn()
    id: number;
-   @Column()
+
+   @Column({type:"double precision"})
    monto: number; 
-   @Column()
+
+   @Column({type:"int"})
    calificacion: number;
+
    @Column()
    palabraClave: string;
   
    @ManyToOne(()=> ClaseEntity, clase => clase.bonos)
-   clase: BonoEntity[];
+   clase: ClaseEntity;
    
    @ManyToOne(()=> UsuarioEntity, usuario => usuario.bonos)
    usuario: UsuarioEntity;
-
-  
-
 
 }
 /* archivo: src/artist/artist.entity.ts */
