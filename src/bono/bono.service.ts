@@ -25,24 +25,19 @@ export class BonoService {
     {
         const usuario : UsuarioEntity = await this.usuarioRepository.findOne({where: {id: usuarioId}, relations: ['bonos']});
         if(!usuario )
-        {
             throw new BusinessLogicException("El usuario con el ID suministrado no existe", BusinessError.NOT_FOUND);
-        }
-        else if(!bono.monto && bono.monto <= 0)
-        {
-            throw new BusinessLogicException("El monto no es valido ", BusinessError.BAD_REQUEST);
-        }
-        else if(usuario.rol != "Profesor")
-        {
+
+        if(usuario.rol != "Profesor")
             throw new BusinessLogicException("El usuario no es un profesor", BusinessError.BAD_REQUEST);
-        }
-        else
-        {
-            bono.usuario = usuario;
-            usuario.bonos = [...usuario.bonos, bono];
-            await this.usuarioRepository.save(usuario);
-            return await this.bonoRepository.save(bono);
-        }
+        
+        if(!bono.monto || bono.monto <= 0)
+            throw new BusinessLogicException("El monto no es valido ", BusinessError.BAD_REQUEST);
+        
+        const bonoCreado: BonoEntity  = await this.bonoRepository.save(bono);
+        usuario.bonos = [...usuario.bonos, bonoCreado];
+        await this.usuarioRepository.save(usuario);
+        return bonoCreado
+        
     }
 
     async findBonosByCodigo(cod: string): Promise<BonoEntity[]>

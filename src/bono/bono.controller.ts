@@ -1,11 +1,13 @@
 /* eslint-disable prettier/prettier */
-import { Body, Controller, Delete, Get, HttpCode, Param, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpCode, Param, Post, UseInterceptors } from '@nestjs/common';
 import { BonoService } from './bono.service';
 import { BonoEntity } from './bono.entity';
 import { plainToInstance } from 'class-transformer';
 import { BonoDto } from './bono.dto';
+import { BusinessErrorsInterceptor } from 'src/shared/interceptors/business-errors/business-errors.interceptor';
 
-@Controller()
+@Controller('')
+@UseInterceptors(BusinessErrorsInterceptor)
 export class BonoController {
     
     constructor(private readonly bonoService : BonoService){}

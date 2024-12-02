@@ -1,0 +1,940 @@
+{
+	"id": "c31dbd10-60d1-4426-b7a6-0fbe52f97f65",
+	"name": "Parcial 2",
+	"timestamp": "2024-12-02T04:47:09.082Z",
+	"collection_id": "40028169-18c3d20f-eaae-45bd-a653-133775158fbe",
+	"folder_id": 0,
+	"environment_id": "40028169-a9e52095-55db-4900-9a45-3efd3d5bf7d8",
+	"totalPass": 36,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-02T04:47:08.501Z",
+	"totalFail": 5,
+	"results": [
+		{
+			"id": "a0384d57-6540-4c85-a6c9-a44335348842",
+			"name": "CrearUsuario Rol no valido",
+			"url": "http://localhost:3000/usuarios",
+			"time": 21,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "cf6fd505-af13-4c55-bcf5-ed2c82318ba0",
+			"name": "CrearUsuario Decana mal extension",
+			"url": "http://localhost:3000/usuarios",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "a431a21a-2b9a-4ccb-813a-486b8ef1f5f6",
+			"name": "CrearUsuario Profesor",
+			"url": "http://localhost:3000/usuarios",
+			"time": 20,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "27f06691-bd14-402d-8a25-0b38d37db148",
+			"name": "CrearUsuario Profesor 2",
+			"url": "http://localhost:3000/usuarios",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "ea9c3ff1-77f6-4c7f-8dac-da46b93c261b",
+			"name": "CrearUsuario Profesor falla mal grupo",
+			"url": "http://localhost:3000/usuarios",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "4aff370d-02f7-4ea3-87af-4a05772b103a",
+			"name": "CrearUsuario Decana",
+			"url": "http://localhost:3000/usuarios",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "26331f82-3ae1-4c4b-8035-dc9c6a1acaab",
+			"name": "CrearBono",
+			"url": "http://localhost:3000/usuarios/1/bonos",
+			"time": 20,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "0d9a65c2-dbe4-4058-81ca-cbfc55bef88e",
+			"name": "CrearBono con calificacion 4",
+			"url": "http://localhost:3000/usuarios/1/bonos",
+			"time": 7,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "3efd3e78-2cfe-4613-ac3c-dbcfc1233e99",
+			"name": "CrearBono Falla No profesor",
+			"url": "http://localhost:3000/usuarios/2/bonos",
+			"time": 10,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Get expected error message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Get expected error message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Get expected error message": false
+				}
+			]
+		},
+		{
+			"id": "cc214573-dce4-4122-9bf4-098182014b3b",
+			"name": "CrearBono Falla MontoNegativo",
+			"url": "http://localhost:3000/usuarios/1/bonos",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "6bad5438-6482-4106-8094-8fa0f1753264",
+			"name": "CrearBono El usuario no existe",
+			"url": "http://localhost:3000/usuarios/666/bonos",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": false
+				}
+			]
+		},
+		{
+			"id": "a53e2a1e-d3c2-4688-bcd0-bc38a6527050",
+			"name": "CrearClase",
+			"url": "http://localhost:3000/clases",
+			"time": 6,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a5822425-21ff-43a0-9f9b-a7336c496d5f",
+			"name": "CrearClase falla",
+			"url": "http://localhost:3000/clases",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "92a4703e-5f5a-4311-bafb-be9e55769827",
+			"name": "Obtener Bonos Por Codigo Clase",
+			"url": "http://localhost:3000/clases/1234567890/bonos",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "09c4b5d8-4ef3-4326-b837-453180ce489b",
+			"name": "Obtener Bonos Por Codigo falla",
+			"url": "http://localhost:3000/clases/1/bonos",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "510cbfbd-195d-4b0b-bf48-304ecdcbf091",
+			"name": "Econtrar Bonos Por Usuario",
+			"url": "http://localhost:3000/usuarios/1/bonos",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f99a638c-712f-4dd1-98ab-e1733436dfb3",
+			"name": "Econtrar Bonos Falla Usuario No existe",
+			"url": "http://localhost:3000/usuarios/666/bonos",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "9638ef3d-a325-493e-80fb-fb89e54ed128",
+			"name": "EncontrarClase",
+			"url": "http://localhost:3000/clases/1",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ba925e34-2fd5-4617-823c-47f41d15d1bf",
+			"name": "EncontrarClase falla",
+			"url": "http://localhost:3000/clases/666",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "2e0e82bc-beca-4905-8ff8-2aecdc4dfb83",
+			"name": "EcontrarUsuario",
+			"url": "http://localhost:3000/usuarios/1",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "dcfb71d8-de66-4d62-9999-a1a506eea2ee",
+			"name": "EcontrarUsuario Falla",
+			"url": "http://localhost:3000/usuarios/1000",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "fc465a5c-4d1b-4ad0-95e0-a71dca5715a7",
+			"name": "Borrar Usuario Tiene Bonos",
+			"url": "http://localhost:3000/usuarios/1",
+			"time": 5,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "5613c8e0-6655-4d8b-84da-47c21768ae6e",
+			"name": "Borrar Usuario",
+			"url": "http://localhost:3000/usuarios/3",
+			"time": 5,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "d87668e9-5b13-4dbf-9d28-2ec632bb58c7",
+			"name": "Borrar Usuario Falla es decana",
+			"url": "http://localhost:3000/usuarios/2",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": false
+				}
+			]
+		},
+		{
+			"id": "917f48e4-3dcf-4f88-8612-20f54ddb1f0f",
+			"name": "Borrar Bono Falla por calificacion",
+			"url": "http://localhost:3000/bonos/2",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "99c9bb33-410f-4332-82c2-b66f5764e053",
+			"name": "Borrar Bono Falla por que no existe",
+			"url": "http://localhost:3000/bonos/666",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Get expected error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Get expected error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Get expected error message": true
+				}
+			]
+		},
+		{
+			"id": "c0ec7173-eb4b-48f5-ba0d-ff98262b071e",
+			"name": "BorrarBono",
+			"url": "http://localhost:3000/bonos/1",
+			"time": 7,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 190,
+	"collection": {
+		"requests": [
+			{
+				"id": "a0384d57-6540-4c85-a6c9-a44335348842",
+				"method": "POST"
+			},
+			{
+				"id": "cf6fd505-af13-4c55-bcf5-ed2c82318ba0",
+				"method": "POST"
+			},
+			{
+				"id": "a431a21a-2b9a-4ccb-813a-486b8ef1f5f6",
+				"method": "POST"
+			},
+			{
+				"id": "27f06691-bd14-402d-8a25-0b38d37db148",
+				"method": "POST"
+			},
+			{
+				"id": "ea9c3ff1-77f6-4c7f-8dac-da46b93c261b",
+				"method": "POST"
+			},
+			{
+				"id": "4aff370d-02f7-4ea3-87af-4a05772b103a",
+				"method": "POST"
+			},
+			{
+				"id": "26331f82-3ae1-4c4b-8035-dc9c6a1acaab",
+				"method": "POST"
+			},
+			{
+				"id": "0d9a65c2-dbe4-4058-81ca-cbfc55bef88e",
+				"method": "POST"
+			},
+			{
+				"id": "3efd3e78-2cfe-4613-ac3c-dbcfc1233e99",
+				"method": "POST"
+			},
+			{
+				"id": "cc214573-dce4-4122-9bf4-098182014b3b",
+				"method": "POST"
+			},
+			{
+				"id": "6bad5438-6482-4106-8094-8fa0f1753264",
+				"method": "POST"
+			},
+			{
+				"id": "a53e2a1e-d3c2-4688-bcd0-bc38a6527050",
+				"method": "POST"
+			},
+			{
+				"id": "a5822425-21ff-43a0-9f9b-a7336c496d5f",
+				"method": "POST"
+			},
+			{
+				"id": "92a4703e-5f5a-4311-bafb-be9e55769827",
+				"method": "GET"
+			},
+			{
+				"id": "09c4b5d8-4ef3-4326-b837-453180ce489b",
+				"method": "GET"
+			},
+			{
+				"id": "510cbfbd-195d-4b0b-bf48-304ecdcbf091",
+				"method": "GET"
+			},
+			{
+				"id": "f99a638c-712f-4dd1-98ab-e1733436dfb3",
+				"method": "GET"
+			},
+			{
+				"id": "9638ef3d-a325-493e-80fb-fb89e54ed128",
+				"method": "GET"
+			},
+			{
+				"id": "ba925e34-2fd5-4617-823c-47f41d15d1bf",
+				"method": "GET"
+			},
+			{
+				"id": "2e0e82bc-beca-4905-8ff8-2aecdc4dfb83",
+				"method": "GET"
+			},
+			{
+				"id": "dcfb71d8-de66-4d62-9999-a1a506eea2ee",
+				"method": "GET"
+			},
+			{
+				"id": "fc465a5c-4d1b-4ad0-95e0-a71dca5715a7",
+				"method": "DELETE"
+			},
+			{
+				"id": "5613c8e0-6655-4d8b-84da-47c21768ae6e",
+				"method": "DELETE"
+			},
+			{
+				"id": "d87668e9-5b13-4dbf-9d28-2ec632bb58c7",
+				"method": "DELETE"
+			},
+			{
+				"id": "917f48e4-3dcf-4f88-8612-20f54ddb1f0f",
+				"method": "DELETE"
+			},
+			{
+				"id": "99c9bb33-410f-4332-82c2-b66f5764e053",
+				"method": "DELETE"
+			},
+			{
+				"id": "c0ec7173-eb4b-48f5-ba0d-ff98262b071e",
+				"method": "DELETE"
+			}
+		]
+	}
+}
